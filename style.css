@@ -1,0 +1,109 @@
+:root{
+    --main: #227C9D;
+    --secondary: #FFCB77;
+    --ter: #FE6D73;
+    --back: #e2e8f0;
+    --sect: #FEF9EF;
+    --green: #17C3B2;
+    font-family: 'Roboto', sans-serif; 
+    margin: 0px;
+    padding: 0px;
+}
+html, body, main{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: grid;
+    /*min-height: 100vh;*/
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 9fr;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* <<----------------------------------Header-------------------------------->> */
+.header{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 0px;
+}
+
+/* <<----------------------------------Main Content-------------------------------->> */
+.content{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    background-color: var(--back);
+    margin: 0px;
+}
+
+.project-contain{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+}
+
+.project-title{
+    margin: 0rem 0rem 0rem 1rem;
+}
+
+
+.project{
+    margin: 0rem 0rem .5rem 1rem;
+    background-color: white;
+    border-radius: .5rem;
+    border-left: .5rem var(--secondary) solid;
+}
+
+.anouncement-contain{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.anouncements{
+    background-color: white;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 1rem;
+}
+
+.trending-contain{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* <<----------------------------------Side Bar-------------------------------->> */
+.sidebar{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: var(--main);
+    color: var(--sect);
+    margin: 0px;
+}
+
+.icon-contain{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon{
+    max-width: 2rem;
+    color: var(--sect);
+}
+
+nav ul li{
+    list-style: none;
+}
+
+.settings ul li{
+    list-style: none;
+}
